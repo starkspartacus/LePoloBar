@@ -6,6 +6,7 @@
 
 html{
   /* scroll-behavior: smooth; */
+  font-size: 10px;
 }
 
 body{
@@ -14,37 +15,7 @@ body{
 
 /* -------Navigation-------- */
 
-header{
-  position: fixed;
-  width: 100%;
-  height: 75px;
-  z-index: 100;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to bottom, #242222, #333);
-  text-transform: uppercase;
-}
 
-.nav-bar .item-nav{
-  text-decoration: none;
-  font-family: 'roboto', sans-serif;
-  color: black;
-  font-size: 16px;
-  color: #f1f1f1;
-  font-weight: bold;
-}
-
-.nav-bar #titre{
-  font-family: 'Merienda', sans-serif;
-  text-decoration: none;
-  font-size: 30px;
-  color: #f1f1f1;
-}
-
-.nav-bar:nth-child(1){
-  margin-right: auto;
-}
 
 
 
