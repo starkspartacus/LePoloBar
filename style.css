@@ -161,11 +161,12 @@ header #arrow{
   width: 100%;
   justify-content:center;
   margin: 0;
+  padding: 0;
 }
 
 table #titre-boisson{
   font-size: 2rem;
-  background-color: gray;
+  
 }
 
 .flexCards table{
@@ -188,6 +189,7 @@ table #titre-boisson{
   background: goldenrod;
 }
 
+
 .flexCards td{
   padding: 1rem;
   font-size: 2rem;
@@ -209,5 +211,11 @@ table #titre-boisson{
 
 .liq:hover{
   background-image: url(ressources/jack2-.png);
+  
+}
+
+.champ:hover{
+  background-image: url(ressources/champ2.png);
+  background-size: cover;
   
 }
