@@ -157,14 +157,15 @@ header #arrow{
 #container-flex{
   display: flex;
   flex-wrap: wrap;
-  height: 80vh;
+  height: 60vh;
   width: 100%;
   justify-content:center;
   margin: 0;
 }
 
-table{
-  
+table #titre-boisson{
+  font-size: 2rem;
+  background-color: gray;
 }
 
 .flexCards table{
@@ -180,6 +181,7 @@ table{
 .flexCards table:hover{
   transform: translateY(2rem);
   
+  
 }
 
 .flexCards tr:hover:nth-child(even){
@@ -192,3 +194,20 @@ table{
   font-family: merienda;
 }
 
+.flexCards table #desp{
+  transition: all 2s ease-in-out;
+}
+
+.biere:hover{
+  background-image: url(ressources/despe1-.png);
+}
+
+.vin:hover{
+  background-image: url(ressources/vin1-.png);
+  
+}
+
+.liq:hover{
+  background-image: url(ressources/jack2-.png);
+  
+}
