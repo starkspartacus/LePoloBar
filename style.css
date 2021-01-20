@@ -148,19 +148,47 @@ header #arrow{
 }
 
 /* Nos tarifs */
+
+#tarif h2{
+  font-size: 4rem;
+  text-align: center;
+  font-family: merienda, sans-serif;
+}
 #container-flex{
   display: flex;
+  flex-wrap: wrap;
   height: 80vh;
   width: 100%;
   justify-content:center;
   margin: 0;
 }
 
-.flexCards table{
-  height: 30rem;
-  width: 20rem;
-  margin: 10rem 5rem;
-  box-shadow: 5px 10px 10px 1px rgb(22, 16, 5);
+table{
   
+}
+
+.flexCards table{
+  height: 35rem;
+  width: 20rem;
+  margin: 9rem 4rem;
+  box-shadow: 5px 10px 10px 1px rgb(22, 16, 5);
+  transition: all 0.3s ease-in-out;
+  border-collapse: collapse;
+  cursor: pointer;
+}
+
+.flexCards table:hover{
+  transform: translateY(2rem);
+  
+}
+
+.flexCards tr:hover:nth-child(even){
+  background: goldenrod;
+}
+
+.flexCards td{
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: merienda;
 }
 
