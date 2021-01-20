@@ -21,26 +21,146 @@ body{
   position: fixed;
   z-index: 50;
   width: 100%;
-  background-color: black;
+  background: linear-gradient(to bottom, #333, #626262);
   text-align: center;
-  height: 10rem;
+  height: 12rem;
   clip-path: polygon(0% 0%, 100% 0%,100% 70%, 55% 70%, 50% 90%, 45% 70%, 0% 70%);
+  border-bottom: 1px dotted #f1f1f1;
   transition: all 0.4s ease-in-out;
+  text-transform: uppercase;
 }
 
 #navigation a{
   text-decoration: none;
   font-size: 3rem;
-  padding: 1rem 5rem;
+  padding: 1rem 2rem;
   line-height: 6.5rem;
   color: #f1f1f1;
   font-family: kaushan script, sans-serif;
   margin: auto;
-
+  transition: all 0.2s ease-in-out;
 }
 
 
+#navigation .item-nav:hover:nth-child(2){
+  color: orange;
+ }
+
+ #navigation .item-nav:hover:nth-child(3){
+  color: orange;
+ }
+
+ #navigation .item-nav:hover:nth-child(4){
+  color: white;
+  
+ }
+
+ #navigation .item-nav:hover:nth-child(5){
+  color: green;
+ }
+
+ #navigation .item-nav:hover:nth-child(6){
+  color: green;
+ }
 
 
+#navigation #titre{
+  display: inline-block;
+  margin-right: 47rem;
+  
+}
 
+
+#navigation img{
+  width: 5rem;
+  height: 3rem;
+  
+}
+
+.icon-menu{
+  position: fixed;
+  right: 12rem;
+  width: 5rem;
+  z-index: 100;
+  display: none;
+}
+
+#navigation a:active{
+  font-size: 4rem;
+}
+
+header{
+  height: 100vh;
+  width: 100%;
+  background: url(./ressources/cig3.jpg);
+  background-position: center;
+  background-size:cover ;
+  border-bottom: 1px dotted #333;
+}
+
+
+h1{
+  text-align: center;
+  margin: 0;
+  position: relative;
+  top: 20rem;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 11rem;
+  font-family: merienda, sans-serif;
+}
+
+header h2{
+  text-align: center;
+  margin: 0;
+  color: whitesmoke;
+  font-weight: bold;
+  position: relative;
+  top: 20rem;
+  font-size: 5rem;
+  letter-spacing: 0.2rem;
+}
+
+header #arrow{
+  text-decoration: none;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f1f1f1;
+  background: crimson;
+  padding: 2rem;
+  border-radius: 9999px;
+  outline: none;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 0 0 0 #fff;
+  animation: pulse 1.2s infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes pulse {
+  to
+  {
+    box-shadow: 0 0 1rem 1rem rgba(212, 202, 202, 0.5);
+  }
+}
+
+/* Nos tarifs */
+#container-flex{
+  display: flex;
+  height: 80vh;
+  width: 100%;
+  justify-content:center;
+  margin: 0;
+}
+
+.flexCards table{
+  height: 30rem;
+  width: 20rem;
+  margin: 10rem 5rem;
+  box-shadow: 5px 10px 10px 1px rgb(22, 16, 5);
+  
+}
 
