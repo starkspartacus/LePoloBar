@@ -196,9 +196,7 @@ table #titre-boisson{
   font-family: merienda;
 }
 
-.flexCards table #desp{
-  transition: all 2s ease-in-out;
-}
+/* Animation carte bg img */
 
 .biere:hover{
   background-image: url(ressources/despe1-.png);
