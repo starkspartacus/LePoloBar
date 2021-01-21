@@ -108,6 +108,7 @@ h1{
   font-weight: bold;
   font-size: 11rem;
   font-family: merienda, sans-serif;
+  white-space: nowrap;
 }
 
 header h2{
@@ -232,3 +233,12 @@ table #titre-boisson{
 
 /* Media query */
 
+@media screen and (max-width: 1610px){
+  #acceuil h1{
+    font-size: clamp(6rem, 2.5vw, 5rem);
+  }
+  #acceuil h2{
+    font-size: clamp(4rem, 2.5vw, 3.5rem);
+    top:23rem;
+  }
+}
