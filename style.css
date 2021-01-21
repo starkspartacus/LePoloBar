@@ -81,9 +81,11 @@ body{
   position: fixed;
   right: 12rem;
   width: 5rem;
-  z-index: 100;
+  z-index: 500;
   display: none;
 }
+
+
 
 #navigation a:active{
   font-size: 4rem;
@@ -190,6 +192,10 @@ table #titre-boisson{
   background: goldenrod;
 }
 
+.flexCards tr:hover:nth-child(odd){
+  background: ;
+}
+
 
 .flexCards td{
   padding: 1rem;
@@ -241,4 +247,215 @@ table #titre-boisson{
     font-size: clamp(4rem, 2.5vw, 3.5rem);
     top:23rem;
   }
+
+  
+}
+
+@media screen and (max-width: 1604px){
+
+  #navigation #titre{
+    display: inline-block;
+    margin-right: 9rem;
+  }
+
+  #navigation a:not(.titre){
+    font-size: 2rem;
+  }
+  .paralax{
+    position: absolute;
+    top: 100rem;
+  }
+}
+
+@media screen and (max-width: 1604px){
+
+  .paralax{
+    position: absolute;
+    top: 155rem;
+  }
+
+  .flexCards table{
+    height: 30rem;
+    width: 15rem;
+  }
+
+  #navigation #titre{
+    display: inline-block;
+    margin-right: 6rem;
+  }
+
+  #navigation a:not(.titre){
+    font-size: 1.4rem;
+  }
+
+  #acceuil h1{
+    font-size: clamp(4rem, 2.5vw, 5rem);
+  }
+  #acceuil h2{
+    font-size: clamp(2rem, 2.5vw, 3.5rem);
+    top:25rem;
+  }
+
+
+  header #arrow{
+
+    padding: 1.5rem;
+    font-size: 1.5rem;
+   
+  }
+  
+}
+
+@media screen and (max-width:1286px){
+  .paralax{
+    margin-top: 75rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 948px){
+  header{
+    width: 105%;
+  }
+.container-flex{
+  width: 100%;
+  overflow: hidden;
+}
+  .paralax{
+    margin-top: 13rem;
+    width: 100%;
+  }
+
+  .flexCards table{
+    height: 30rem;
+    width: 15rem;
+    margin: 1rem 2rem;
+    
+  }
+
+  #navigation #titre{
+    display: inline-block;
+    margin-right: 6rem;
+  }
+
+  #navigation a:not(.titre){
+    font-size: 1.4rem;
+  }
+
+  #acceuil h1{
+    font-size: clamp(4rem, 2.5vw, 5rem);
+  }
+  #acceuil h2{
+    font-size: clamp(2rem, 2.5vw, 3.5rem);
+    top:25rem;
+  }
+
+
+  header #arrow{
+    
+    padding: 1.5rem;
+    font-size: 1.5rem;
+   
+  }
+  
+}
+
+
+@media screen and (max-width: 797px){
+  header{
+    width: 105%;
+  }
+.container-flex{
+  width: 100%;
+  overflow: hidden;
+}
+  .paralax{
+    margin-top: 60rem;
+    width: 105%;
+  }
+
+  .flexCards table{
+    height: 30rem;
+    width: 15rem;
+    margin: 1rem 2rem;
+    
+  }
+
+  #navigation #titre{
+    display: inline-block;
+    margin-right: 4rem;
+  }
+
+  #navigation a:not(.titre){
+    font-size: 1rem;
+    margin: 0 -1rem;
+  }
+
+  #acceuil h1{
+    font-size: clamp(4rem, 2.5vw, 5rem);
+  }
+  #acceuil h2{
+    font-size: clamp(2rem, 2.5vw, 3.5rem);
+    top:25rem;
+  }
+
+
+  header #arrow{
+    
+    padding: 1.5rem;
+    font-size: 1.5rem;
+   
+  }
+  
+}
+
+@media screen and (max-width: 424px){
+  header{
+    width: 137%;
+  }
+.container-flex{
+  width: 100%;
+  overflow: hidden;
+}
+  .paralax{
+    
+    display: none;
+  }
+
+  .flexCards table{
+    height: 30rem;
+    width: 15rem;
+    margin: 3rem 2rem;
+    position: relative;
+    left: 6rem;
+    
+  }
+
+  #navigation #titre{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+
+  #navigation a:not(.titre){
+    font-size: 1rem;
+    margin: 0 -1.6rem;
+  }
+
+  #acceuil h1{
+    font-size: clamp(3.2rem, 2.5vw, 5rem);
+  }
+  #acceuil h2{
+    font-size: clamp(2rem, 2.5vw, 2.5rem);
+    top:25rem;
+  }
+
+
+  header #arrow{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    position: relative;
+    left: 13rem;
+  }
+  
 }
