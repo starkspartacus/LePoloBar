@@ -217,3 +217,15 @@ table #titre-boisson{
   background-size: cover;
   
 }
+
+/* Section paralax */
+
+.paralax{
+  height: 30rem;
+  width: 100%;
+  background-image: url(ressources/champ2.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-position: cover;
+  
+}
