@@ -10,8 +10,9 @@ html{
 }
 
 body{
-  background: #f7f7f7;
+  
   font-family: roboto, sans-serif;
+  background: rgba(212, 202, 202, 0.5);
 
 }
 
@@ -466,12 +467,13 @@ table #titre-boisson{
 
 .titre-soiree{
   
-  text-align: center;
+  justify-content: center;
   font-size: 7rem;
   color: #000;
   padding: 5rem 0;
   text-transform: uppercase;
-  
+  display: flex;
+  flex-wrap: wrap;
   
 }
 
@@ -484,6 +486,8 @@ table #titre-boisson{
   max-width: 130rem;
   min-width: 30rem;
   margin: 0 auto 10rem;
+  overflow: hidden;
+  height: 100%;
 }
 
 .btn-modale{
@@ -500,40 +504,41 @@ table #titre-boisson{
 }
 
 .btn-modale:nth-child(1){
-  background-image: url(ressources/ressources-soiree/ph1.jpg);
+  background-image: url(ressources/ressources-soiree/img1-soiree.jpg);
+  
 }
 .btn-modale:nth-child(2){
-  background-image: url(ressources/ressources-soiree/ph2.jpg);
+  background-image: url(ressources/ressources-soiree/img2-soiree.jpg);
 }
 .btn-modale:nth-child(3){
-  background-image: url(ressources/ressources-soiree/ph3.jpg);
+  background-image: url(ressources/ressources-soiree/img3-soiree.jpg);
 }
 .btn-modale:nth-child(4){
-  background-image: url(ressources/ressources-soiree/ph4.jpg);
+  background-image: url(ressources/ressources-soiree/img4-soiree.jpg);
 }
 .btn-modale:nth-child(5){
-  background-image: url(ressources/ressources-soiree/ph5.jpg);
+  background-image: url(ressources/ressources-soiree/img5-soiree.jpg);
 }
 .btn-modale:nth-child(6){
-  background-image: url(ressources/ressources-soiree/ph6.jpg);
+  background-image: url(ressources/ressources-soiree/img6-soiree.jpg);
 }
 .btn-modale:nth-child(7){
-  background-image: url(ressources/ressources-soiree/ph7.jpg);
+  background-image: url(ressources/ressources-soiree/img7-soiree.jpg);
 }
 .btn-modale:nth-child(8){
-  background-image: url(ressources/ressources-soiree/ph8.jpg);
+  background-image: url(ressources/ressources-soiree/img8-soiree.jpg);
 }
 .btn-modale:nth-child(9){
-  background-image: url(ressources/ressources-soiree/ph9.jpg);
+  background-image: url(ressources/ressources-soiree/img9-soiree.jpg);
 }
 .btn-modale:nth-child(10){
-  background-image: url(ressources/ressources-soiree/ph10.jpg);
+  background-image: url(ressources/ressources-soiree/img10-soiree.jpg);
 }
 .btn-modale:nth-child(11){
-  background-image: url(ressources/ressources-soiree/ph11.jpg);
+  background-image: url(ressources/ressources-soiree/img11-soiree.jpg);
 }
 .btn-modale:nth-child(12){
-  background-image: url(ressources/ressources-soiree/ph12.jpg);
+  background-image: url(ressources/ressources-soiree/img12-soiree.jpg);
 }
 
 .bloc-modal{
@@ -543,5 +548,94 @@ table #titre-boisson{
   right: 0;
   bottom: 0;
   background: rgba(0,0,0,0.75);
+  z-index: 1000;
+  display: none;
+}
+
+.active-modale{
+  display: block;
   
+}
+
+.bloc-img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80rem;
+  height: 50rem;
+
+}
+
+.bloc-modal img{
+  width: 100%;
+  
+}
+
+.fermeture-modale{
+  position: absolute;
+  z-index: 4000;
+  top: 5%;
+  right: 5%;
+  height: 6rem;
+  width: 6rem;
+  font-size: 2rem;
+  color: white;
+  background: red;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+
+.image-zoom{
+  transition: transform 0.4s ease-in-out;
+  transform: scale(1);
+  will-change: transform;
+}
+
+ .image-zoom:hover{
+  transform: scale(1.2);
+}
+
+/* Media query section soirée en image */
+
+@media screen and (max-width: 1700px){
+  .titre-soiree{
+    font-size: 4rem;
+  }
+
+  
+}
+
+@media screen and (max-width: 1600px){
+  .titre-soiree{
+    position: relative;
+    font-size: 4rem;
+    top: 15rem;
+  }
+
+  #soiree{
+    position: relative;
+    top: 12rem;
+  }
+}
+
+@media screen and (max-width: 1288px){
+  .titre-soiree{
+    position: relative;
+    font-size: 3.2rem;
+    top: 90rem;
+  }
+
+  #soiree{
+    position: relative;
+    top: 90rem;
+  }
+
+  .btn-modale{
+    width: 25rem;
+    height: 30rem
+  
+  }
 }
